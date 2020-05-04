@@ -88,8 +88,8 @@ public class Game extends JPanel {
 		Graphics2D g2 = (Graphics2D) g;
 		g2.setColor(Color.red);
 		g2.setStroke(new BasicStroke(10.0f));
-		g.setColor(new Color(0, 0, 255));
-		g.drawOval(cellX * cellWidth, cellY * cellHeight, cellWidth, cellHeight);
+		g2.setColor(new Color(0, 0, 255));
+		g2.drawOval(cellX * cellWidth, cellY * cellHeight, cellWidth, cellHeight);
 	}
 
 	private void drawX(Graphics g, int cellX, int cellY) {

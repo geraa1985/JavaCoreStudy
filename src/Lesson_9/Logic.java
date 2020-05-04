@@ -159,7 +159,7 @@ public class Logic {
 	}
 
 	public boolean checkLine(int cy, int cx, int vy, int vx, char dot) {
-		if (cx + vx * dotsToWin - 1 > sizeY - 1 || cy + vy * dotsToWin - 1 > sizeX - 1 || cy + vy * (dotsToWin - 1) < 0) {
+		if (cx + vx * dotsToWin - 1 > sizeX - 1 || cy + vy * dotsToWin - 1 > sizeY - 1 || cy + vy * (dotsToWin - 1) < 0) {
 			return false;
 		}
 

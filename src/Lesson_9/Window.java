@@ -4,10 +4,10 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Window extends JFrame {
-	private static int WIN_X = 500;
-	private static int WIN_Y = 100;
-	private static int WIN_WIDTH = 500;
-	private static int WIN_HEIGHT = 500;
+	private static final int WIN_X = 500;
+	private static final int WIN_Y = 100;
+	private static final int WIN_WIDTH = 500;
+	private static final int WIN_HEIGHT = 500;
 
 
 	private Settings panelSet;
