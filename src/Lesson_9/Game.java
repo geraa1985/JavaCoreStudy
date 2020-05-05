@@ -6,6 +6,10 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class Game extends JPanel {
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 3894153739406076151L;
 	private int gameModeValue;
 	private int fieldSizeX;
 	private int fieldSizeY;
@@ -42,7 +46,7 @@ public class Game extends JPanel {
 			window.setPoint(cellX, cellY);
 		}
 
-		System.out.println(cellX + " " + cellY);
+//		System.out.println(cellX + " " + cellY);
 		repaint();
 	}
 

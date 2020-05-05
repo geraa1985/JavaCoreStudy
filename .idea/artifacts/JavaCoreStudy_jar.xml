@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JavaCoreStudy:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaCoreStudy_jar</output-path>
+    <root id="archive" name="JavaCoreStudy.jar">
+      <element id="module-output" name="JavaCoreStudy" />
+    </root>
+  </artifact>
+</component>
