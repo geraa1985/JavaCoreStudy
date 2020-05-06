@@ -17,11 +17,7 @@ public class Settings extends JPanel {
 	private static final int H_VS_PC = 0;
 	private static final int H_VS_H = 1;
 
-	private Window window;
-
-
-	public Settings(Window window) {
-		this.window = window;
+	public Settings() {
 		setBackground(Color.orange);
 		setLayout(new GridLayout(10, 1));
 
