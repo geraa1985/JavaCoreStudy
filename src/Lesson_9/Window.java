@@ -34,7 +34,7 @@ public class Window extends JFrame {
 		buttonPanel.add(buttonExit);
 		add(buttonPanel, BorderLayout.SOUTH);
 
-		panelSet = new Settings(this);
+		panelSet = new Settings();
 
 		panelGame = new Game(this);
 
@@ -61,7 +61,7 @@ public class Window extends JFrame {
 	}
 
 	void getSettings(int gameModeValue, int fieldSizeX, int fieldSizeY, int winLength){
-		panelGame.setSettings(gameModeValue, fieldSizeX, fieldSizeY, winLength);
+		panelGame.setSettings(fieldSizeX, fieldSizeY);
 		logic.setSettings(gameModeValue, fieldSizeX, fieldSizeY, winLength);
 		logic.initMap();
 //		logic.printMap();

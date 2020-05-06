@@ -6,15 +6,9 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class Game extends JPanel {
-	/**
-	 *
-	 */
-	private static final long serialVersionUID = 3894153739406076151L;
-	private int gameModeValue;
+	
 	private int fieldSizeX;
 	private int fieldSizeY;
-	private int winLength;
-
 	private int cellHeight;
 	private int cellWidth;
 
@@ -25,7 +19,6 @@ public class Game extends JPanel {
 	public Game(Window window) {
 		this.window = window;
 		setBackground(Color.cyan);
-
 
 		addMouseListener(new MouseAdapter() {
 			@Override
@@ -46,7 +39,7 @@ public class Game extends JPanel {
 			window.setPoint(cellX, cellY);
 		}
 
-//		System.out.println(cellX + " " + cellY);
+		// System.out.println(cellX + " " + cellY);
 		repaint();
 	}
 
@@ -104,11 +97,9 @@ public class Game extends JPanel {
 		g2.drawLine((cellX + 1) * cellWidth, cellY * cellHeight, cellX * cellWidth, (cellY + 1) * cellHeight);
 	}
 
-	void setSettings(int gameModeValue, int fieldSizeX, int fieldSizeY, int winLength) {
-		this.gameModeValue = gameModeValue;
+	void setSettings(int fieldSizeX, int fieldSizeY) {
 		this.fieldSizeX = fieldSizeX;
 		this.fieldSizeY = fieldSizeY;
-		this.winLength = winLength;
 		isInit = true;
 	}
 }
